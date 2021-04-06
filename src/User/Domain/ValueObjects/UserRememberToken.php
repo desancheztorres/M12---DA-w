@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Src\BoundedContext\User\Domain\ValueObjects;
+namespace Src\User\Domain\ValueObjects;
 
 final class UserRememberToken {
     private $value;

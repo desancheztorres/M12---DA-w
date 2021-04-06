@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Src\BoundedContext\User\Infrastructure;
+namespace Src\User\Infrastructure;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Src\BoundedContext\User\Application\GetUserUseCase;
-use Src\BoundedContext\User\Application\UpdateUserUseCase;
-use Src\BoundedContext\User\Domain\User;
-use Src\BoundedContext\User\Infrastructure\Repositories\EloquentUserRepository;
+use Src\User\Application\find\Users;
+use Src\User\Application\update\UsersUpdate;
+use Src\User\Domain\User;
+use Src\User\Infrastructure\Repositories\EloquentUserRepository;
 
 final class UpdateUserController {
     /**
@@ -34,7 +34,7 @@ final class UpdateUserController {
     {
         $userId = (int) $request->id;
 
-        $getUserUseCase = new GetUserUseCase($this->repository);
+        $getUserUseCase = new Users($this->repository);
         $user = $getUserUseCase->__invoke($userId);
 
         $userName = $request->get('name', $user->name()->value());
@@ -44,7 +44,7 @@ final class UpdateUserController {
         $userEmailVerifiedDate = $user->emailVerifiedDate()->value();
         $userRememberToken = $user->rememberToken()->value();
 
-        $updateUserUseCase = new UpdateUserUseCase($this->repository);
+        $updateUserUseCase = new UsersUpdate($this->repository);
         $updateUserUseCase->__invoke(
             $userId,
             $userName,

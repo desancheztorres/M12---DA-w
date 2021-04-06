@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Src\BoundedContext\User\Infrastructure;
+namespace Src\User\Infrastructure;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Src\BoundedContext\User\Application\CreateUserUseCase;
-use Src\BoundedContext\User\Application\GetUserByCriteriaUseCase;
-use Src\BoundedContext\User\Domain\User;
-use Src\BoundedContext\User\Infrastructure\Repositories\EloquentUserRepository;
+use Src\User\Application\create\UsersCreate;
+use Src\User\Application\find\UsersByCriteria;
+use Src\User\Domain\User;
+use Src\User\Infrastructure\Repositories\EloquentUserRepository;
 
 final class CreateUserController {
     private $repository;
@@ -32,7 +32,7 @@ final class CreateUserController {
         $userEmailVerifiedDate = null;
         $userRememberToken = null;
 
-        $createUserCase = new CreateUserUseCase($this->repository);
+        $createUserCase = new UsersCreate($this->repository);
         $createUserCase->__invoke(
             $userName,
             $userLastname,
@@ -42,7 +42,7 @@ final class CreateUserController {
             $userRememberToken
         );
 
-        $getUserByCriteriaUseCase = new GetUserByCriteriaUseCase($this->repository);
+        $getUserByCriteriaUseCase = new UsersByCriteria($this->repository);
         return $getUserByCriteriaUseCase->__invoke($userName, $userLastname, $userEmail);
     }
 }

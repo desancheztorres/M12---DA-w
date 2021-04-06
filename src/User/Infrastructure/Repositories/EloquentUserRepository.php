@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Src\BoundedContext\User\Infrastructure\Repositories;
+namespace Src\User\Infrastructure\Repositories;
 
-use Src\BoundedContext\User\Domain\Contracts\UserRepositoryContract;
-use Src\BoundedContext\User\Domain\User;
-use Src\BoundedContext\User\Domain\ValueObjects\UserEmail;
-use Src\BoundedContext\User\Domain\ValueObjects\UserEmailVerifiedDate;
-use Src\BoundedContext\User\Domain\ValueObjects\UserId;
 use App\Models\User as EloquentUserModel;
-use Src\BoundedContext\User\Domain\ValueObjects\UserLastname;
-use Src\BoundedContext\User\Domain\ValueObjects\UserName;
-use Src\BoundedContext\User\Domain\ValueObjects\UserPassword;
-use Src\BoundedContext\User\Domain\ValueObjects\UserRememberToken;
+use Src\User\Domain\User;
+use Src\User\Domain\Contracts\UserRepository;
+use Src\User\Domain\ValueObjects\UserEmail;
+use Src\User\Domain\ValueObjects\UserEmailVerifiedDate;
+use Src\User\Domain\ValueObjects\UserId;
+use Src\User\Domain\ValueObjects\UserLastname;
+use Src\User\Domain\ValueObjects\UserName;
+use Src\User\Domain\ValueObjects\UserPassword;
+use Src\User\Domain\ValueObjects\UserRememberToken;
 
-final class EloquentUserRepository implements UserRepositoryContract {
+final class EloquentUserRepository implements UserRepository {
 
     private $eloquentUserModel;
 
@@ -26,7 +26,7 @@ final class EloquentUserRepository implements UserRepositoryContract {
 
     public function find(UserId $id): ?User
     {
-        $user = $this->eloquentUserModel->firstOrFail($id->value());
+        $user = $this->eloquentUserModel->findOrFail($id->value());
 
         return new User(
             new UserName($user->name),
@@ -73,9 +73,9 @@ final class EloquentUserRepository implements UserRepositoryContract {
     public function update(UserId $id, User $user): void
     {
         $data = [
-            'name' => new UserName($user->name()->value()),
-            'lastname' => new UserLastname($user->lastname()->value()),
-            'email' => new UserEmail($user->email()->value())
+            'name'  => $user->name()->value(),
+            'lastname' => $user->lastname()->value(),
+            'email' => $user->email()->value(),
         ];
 
         $this->eloquentUserModel

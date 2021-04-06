@@ -2,16 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Src\BoundedContext\User\Domain;
+namespace Src\User\Domain;
 
-use Src\BoundedContext\User\Domain\ValueObjects\UserEmail;
-use Src\BoundedContext\User\Domain\ValueObjects\UserEmailVerifiedDate;
-use Src\BoundedContext\User\Domain\ValueObjects\UserLastname;
-use Src\BoundedContext\User\Domain\ValueObjects\UserName;
-use Src\BoundedContext\User\Domain\ValueObjects\UserPassword;
-use Src\BoundedContext\User\Domain\ValueObjects\UserRememberToken;
+use Src\User\Domain\ValueObjects\UserEmail;
+use Src\User\Domain\ValueObjects\UserEmailVerifiedDate;
+use Src\User\Domain\ValueObjects\UserLastname;
+use Src\User\Domain\ValueObjects\UserName;
+use Src\User\Domain\ValueObjects\UserPassword;
+use Src\User\Domain\ValueObjects\UserRememberToken;
 
 final class User {
+
     private $name;
     private $lastname;
     private $email;
@@ -36,27 +37,33 @@ final class User {
         $this->rememberToken = $rememberToken;
     }
 
-    public function name(): UserName {
+    public function name(): UserName
+    {
         return $this->name;
     }
 
-    public function lastname(): UserLastname {
+    public function lastname(): UserLastname
+    {
         return $this->lastname;
     }
 
-    public function email(): UserEmail {
+    public function email(): UserEmail
+    {
         return $this->email;
     }
 
-    public function password(): UserPassword {
+    public function password(): UserPassword
+    {
         return $this->password;
     }
 
-    public function emailVerifiedDate(): UserEmailVerifiedDate {
+    public function emailVerifiedDate(): UserEmailVerifiedDate
+    {
         return $this->emailVierifiedDate;
     }
 
-    public function rememberToken(): UserRememberToken {
+    public function rememberToken(): UserRememberToken
+    {
         return $this->rememberToken;
     }
 
@@ -67,7 +74,8 @@ final class User {
         UserPassword $password,
         UserEmailVerifiedDate $emailVerifiedDate,
         UserRememberToken $rememberToken
-    ): User {
+    ): User
+    {
         return new self($name, $lastname, $email, $password, $emailVerifiedDate, $rememberToken);
     }
 

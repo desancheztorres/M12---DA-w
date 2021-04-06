@@ -2,31 +2,32 @@
 
 declare(strict_types=1);
 
-namespace Src\BoundedContext\User\Application;
+namespace Src\User\Application\update;
 
-use Src\BoundedContext\User\Domain\Contracts\UserRepositoryContract;
+use Src\User\Domain\Contracts\UserRepository;
 use DateTime;
-use Src\BoundedContext\User\Domain\User;
-use Src\BoundedContext\User\Domain\ValueObjects\UserEmail;
-use Src\BoundedContext\User\Domain\ValueObjects\UserEmailVerifiedDate;
-use Src\BoundedContext\User\Domain\ValueObjects\UserId;
-use Src\BoundedContext\User\Domain\ValueObjects\UserLastname;
-use Src\BoundedContext\User\Domain\ValueObjects\UserName;
-use Src\BoundedContext\User\Domain\ValueObjects\UserPassword;
-use Src\BoundedContext\User\Domain\ValueObjects\UserRememberToken;
+use Src\User\Domain\User;
+use Src\User\Domain\ValueObjects\UserEmail;
+use Src\User\Domain\ValueObjects\UserEmailVerifiedDate;
+use Src\User\Domain\ValueObjects\UserId;
+use Src\User\Domain\ValueObjects\UserLastname;
+use Src\User\Domain\ValueObjects\UserName;
+use Src\User\Domain\ValueObjects\UserPassword;
+use Src\User\Domain\ValueObjects\UserRememberToken;
 
-final class UpdateUserUseCase {
+final class UsersUpdate {
 
     /**
-     * @var UserRepositoryContract
+     * @var UserRepository
      */
     private $repository;
 
     /**
-     * UpdateUserUseCase constructor.
-     * @param UserRepositoryContract $repository
+     * UsersUpdate constructor.
+     *
+     * @param UserRepository $repository
      */
-    public function __construct(UserRepositoryContract $repository)
+    public function __construct(UserRepository $repository)
     {
         $this->repository = $repository;
     }

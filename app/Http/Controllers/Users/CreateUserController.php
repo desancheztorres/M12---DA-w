@@ -12,9 +12,9 @@ class CreateUserController extends Controller {
 
     /**
      * CreateUserController constructor.
-     * @param \Src\BoundedContext\User\Infrastructure\CreateUserController $createUserController
+     * @param \Src\User\Infrastructure\CreateUserController $createUserController
      */
-    public function __construct(\Src\BoundedContext\User\Infrastructure\CreateUserController $createUserController)
+    public function __construct(\Src\User\Infrastructure\CreateUserController $createUserController)
     {
         $this->createUserController = $createUserController;
     }

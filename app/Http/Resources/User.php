@@ -13,7 +13,7 @@ class User extends JsonResource
      * @param  Request  $request
      * @return array
      */
-    public function toArray($request)
+    public function toArray($request): array
     {
         return [
             'name' => $this->name()->value(),
