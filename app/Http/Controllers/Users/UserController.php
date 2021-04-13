@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateUserRequest;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller {
@@ -17,7 +16,7 @@ class UserController extends Controller {
             'name' => $request->get('name', $user->name),
             'lastname' => $request->get('lastname', $user->lastname),
             'email' => $request->get('email', $user->email),
-            'password' => Hash::make($request->password),
+            'password' => $request->password ? Hash::make($request->password) : $user->passord,
         ]);
 
         return $user;
