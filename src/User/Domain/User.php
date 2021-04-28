@@ -6,13 +6,14 @@ namespace Src\User\Domain;
 
 use Src\User\Domain\ValueObjects\UserEmail;
 use Src\User\Domain\ValueObjects\UserEmailVerifiedDate;
+use Src\User\Domain\ValueObjects\UserId;
 use Src\User\Domain\ValueObjects\UserLastname;
 use Src\User\Domain\ValueObjects\UserName;
 use Src\User\Domain\ValueObjects\UserPassword;
 use Src\User\Domain\ValueObjects\UserRememberToken;
 
 final class User {
-
+    private $id;
     private $name;
     private $lastname;
     private $email;
@@ -26,15 +27,21 @@ final class User {
         UserEmail $email,
         UserPassword $password,
         UserEmailVerifiedDate $emailVierifiedDate,
-        UserRememberToken $rememberToken
+        UserRememberToken $rememberToken,
+        ?UserId $id = null
     )
     {
+        $this->id = $id;
         $this->name = $name;
         $this->lastname = $lastname;
         $this->email = $email;
         $this->password = $password;
         $this->emailVierifiedDate = $emailVierifiedDate;
         $this->rememberToken = $rememberToken;
+    }
+
+    public function id(): UserId {
+        return $this->id;
     }
 
     public function name(): UserName

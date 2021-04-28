@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateUserRequest;
+use App\Http\Resources\UserRes;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller {
@@ -19,7 +20,7 @@ class UserController extends Controller {
             'password' => $request->password ? Hash::make($request->password) : $user->passord,
         ]);
 
-        return $user;
+        return new UserRes($user);
     }
 
     public function destroy()

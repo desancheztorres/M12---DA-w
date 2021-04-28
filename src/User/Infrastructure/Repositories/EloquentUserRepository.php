@@ -52,7 +52,8 @@ final class EloquentUserRepository implements UserRepository {
             new UserEmail($user->email),
             new UserPassword($user->password),
             new UserEmailVerifiedDate($user->email_verified_at),
-            new UserRememberToken($user->remember_token)
+            new UserRememberToken($user->remember_token),
+            new UserId($user->id)
         );
     }
 

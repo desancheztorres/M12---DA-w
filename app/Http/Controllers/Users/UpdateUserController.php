@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Users;
 
+use App\Http\Resources\User;
 use App\Http\Resources\User as UserResource;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class UpdateUserController {
 
@@ -26,13 +26,13 @@ class UpdateUserController {
     /**
      * @param Request $request
      *
-     * @return Response
+     * @return \App\Http\Resources\User
      */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): UserResource
     {
         $updatedUser = new UserResource($this->updateUserController->__invoke($request));
 
-        return response($updatedUser, 200);
+        return new UserResource($updatedUser);
     }
 
 }

@@ -1,0 +1,236 @@
+[
+    {
+        "name": "Arroz blanco",
+        "description": "description",
+        "image": "c1l6bmvkxvqs5oa/arroz-blanco.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Garbanzos",
+        "description": "description",
+        "image": "8mwc4me0y1iiwh8/garbanzos.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Lentejas",
+        "description": "description",
+        "image": "ljn5piuj6w0fd01/lentejas.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Leche de vaca",
+        "description": "description",
+        "image": "z0likd3h1v6zcvd/leche-de-vaca.png",
+        "magnitude_id": "2"
+    },
+    {
+        "name": "Leche de soja",
+        "description": "description",
+        "image": "4cipiqabqy8zrd5/leche-de-soja.png",
+        "magnitude_id": "2"
+    },
+    {
+        "name": "Tomate",
+        "description": "description",
+        "image": "65v4ap33b3udg59/tomate.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Avena",
+        "description": "description",
+        "image": "ucmg4k6dxoikyeq/avena.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Huevo",
+        "description": "description",
+        "image": "bpkn8il61wd6f2w/huevo.png",
+        "magnitude_id": "3"
+    },
+    {
+        "name": "Azúcar",
+        "description": "description",
+        "image": "qu5gyddu7pujwgy/azucar.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Sal",
+        "description": "description",
+        "image": "y18l87zsd9i5scw/sal.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Mantequilla",
+        "description": "description",
+        "image": "gh4guc61u7pozb9/mantequilla.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Margarina",
+        "description": "description",
+        "image": "e30znd49189w30z/margarina.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Aceite de oliva",
+        "description": "description",
+        "image": "riq612t133edep4/aceite-de-oliva.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Harina",
+        "description": "description",
+        "image": "vgmmiy2agaexld0/harina.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Maicena",
+        "description": "description",
+        "image": "w7c9s2azs3c28rv/maicena.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Levadura",
+        "description": "description",
+        "image": "27enlu3hvcpwdk4/levadura.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Ajo",
+        "description": "description",
+        "image": "hbdm4w1foh5fcg5/ajo.png",
+        "magnitude_id": "3"
+    },
+    {
+        "name": "Patata",
+        "description": "description",
+        "image": "qveo6b7b872g7a3/patata.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Cebolla",
+        "description": "description",
+        "image": "340s4nran4ptcvy/cebolla.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Pimiento",
+        "description": "description",
+        "image": "z2mgg973o313e8i/pimiento.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Jengibre",
+        "description": "description",
+        "image": "qklc7v7yubt8y6g/jengibre.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Ketchup",
+        "description": "description",
+        "image": "8gwon50pvw29bhf/ketchup.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Mayonesa",
+        "description": "description",
+        "image": "2mnz7xha4ujviv9/mayonesa.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Mostaza",
+        "description": "description",
+        "image": "3hbfv0m7k32zxb2/mostaza.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Limón",
+        "description": "description",
+        "image": "cdn3p3jahxn6mpy/limon.png",
+        "magnitude_id": "3"
+    },
+    {
+        "name": "Manzana",
+        "description": "description",
+        "image": "tvv8aqv3ks6djn8/manzana.png",
+        "magnitude_id": "3"
+    },
+    {
+        "name": "Champiñones",
+        "description": "description",
+        "image": "5g2ed78v5nrz5eh/champi%C3%B1ones.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Yogur natural",
+        "description": "description",
+        "image": "i5dl1lts0sgpgey/yogur-natural.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Yogur de soja",
+        "description": "description",
+        "image": "vfpe0cst159gtp4/yogur-de-soja.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Vinagre",
+        "description": "description",
+        "image": "p71v99jm4kleqqb/vinagre.png",
+        "magnitude_id": "2"
+    },
+    {
+        "name": "Vinagre de manzana",
+        "description": "description",
+        "image": "e3876poaq265m8a/vinagre-de-manzana.png",
+        "magnitude_id": "2"
+    },
+    {
+        "name": "Pan",
+        "description": "description",
+        "image": "bnolqlk2lmbamzb/pan.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Maíz",
+        "description": "description",
+        "image": "85ywdvb0plwi24b/maiz.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Almendras",
+        "description": "description",
+        "image": "ocx4d4f9vbcnaeu/almendras.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Fresas",
+        "description": "description",
+        "image": "wv4h1vb3dumthez/fresas.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Brócoli",
+        "description": "description",
+        "image": "qitjmx2x50g9ros/brocoli.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Plátano",
+        "description": "description",
+        "image": "emdbapyqoo23oq8/platano.png",
+        "magnitude_id": "3"
+    },
+    {
+        "name": "Naranja",
+        "description": "description",
+        "image": "7vy73aw8dnv7the/naranja.png",
+        "magnitude_id": "3"
+    },
+    {
+        "name": "Alubias",
+        "description": "description",
+        "image": "5glkf5p2kjojwmy/alubias.png",
+        "magnitude_id": "1"
+    }
+]
