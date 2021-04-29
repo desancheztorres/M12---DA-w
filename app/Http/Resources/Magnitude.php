@@ -16,6 +16,7 @@ class Magnitude extends JsonResource
     {
         return [
             'data' => [
+                'id' => $this->id,
                 'name' => $this->name
             ]
         ];
