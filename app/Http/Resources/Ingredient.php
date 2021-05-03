@@ -17,6 +17,7 @@ class Ingredient extends JsonResource
         return [
             'data' => [
                 'id' => $this->id,
+                'uuid' => $this->uuid,
                 'name' => $this->name,
                 'description' => $this->description,
                 'image' => $this->image_path(),

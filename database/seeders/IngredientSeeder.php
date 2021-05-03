@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class IngredientSeeder extends Seeder
 {
@@ -22,6 +23,7 @@ class IngredientSeeder extends Seeder
         foreach ($ingredients as $ingredient) {
             DB::table('ingredients')->insert(
                 [
+                    'uuid' => Str::uuid(),
                     'name' => $ingredient->name,
                     'description' => $ingredient->description,
                     'image' => $ingredient->image,

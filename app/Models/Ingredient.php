@@ -13,6 +13,11 @@ class Ingredient extends Model
 
     const IMAGE_PATH = '//www.dropbox.com/s/tvv8aqv3ks6djn8/';
 
+    public function getRouteKeyName()
+    {
+        return 'uuid';
+    }
+
     public function image_path() {
         return self::IMAGE_PATH . $this->image;
     }
