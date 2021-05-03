@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
+
     /**
      * The path to the "home" route for your application.
      *
@@ -37,38 +38,39 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->configureRateLimiting();
 
-        $this->routes(function () {
-            Route::prefix('api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/api.php'));
+        $this->routes(
+            function () {
+                Route::prefix('api')
+                     ->middleware('api')
+                     ->namespace($this->namespace)
+                     ->group(base_path('routes/api.php'));
 
-            Route::middleware('web')
-                ->namespace($this->namespace)
-                ->group(base_path('routes/web.php'));
+                Route::middleware('web')
+                     ->namespace($this->namespace)
+                     ->group(base_path('routes/web.php'));
 
-            Route::prefix('api')
-                ->middleware('api')
-                ->namespace($this->namespace)
-                 ->group(base_path('routes/magnitudes.php'));
+                Route::prefix('api')
+                     ->middleware('api')
+                     ->namespace($this->namespace)
+                     ->group(base_path('routes/magnitudes.php'));
 
-            Route::prefix('api')
-                 ->middleware('api')
-                 ->namespace($this->namespace)
-                 ->group(base_path('routes/ingredients.php'));
+                Route::prefix('api')
+                     ->middleware('api')
+                     ->namespace($this->namespace)
+                     ->group(base_path('routes/ingredients.php'));
 
-            Route::prefix('api')
-                 ->middleware('api')
-                 ->namespace($this->namespace)
-                 ->group(base_path('routes/recipes.php'));
+                Route::prefix('api')
+                     ->middleware('api')
+                     ->namespace($this->namespace)
+                     ->group(base_path('routes/recipes.php'));
 
-            Route::prefix('api')
-                 ->middleware('api')
-                 ->namespace($this->namespace)
-                ->middleware(['auth:sanctum'])
-                 ->group(base_path('routes/pantries.php'));
+                Route::prefix('api')
+                     ->namespace($this->namespace)
+                     ->middleware(['auth:sanctum'])
+                     ->group(base_path('routes/pantries.php'));
 
-        });
+            }
+        );
     }
 
     /**
@@ -78,8 +80,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function configureRateLimiting()
     {
-        RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
-        });
+        RateLimiter::for(
+            'api',
+            function (Request $request) {
+                return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+            }
+        );
     }
+
 }
