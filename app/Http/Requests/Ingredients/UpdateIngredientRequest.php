@@ -6,6 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateIngredientRequest extends FormRequest
 {
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -24,10 +25,11 @@ class UpdateIngredientRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'nullable',
-            'description' => 'nullable',
-            'image' => 'nullable',
+            'name'         => 'nullable',
+            'description'  => 'nullable',
+            'image'        => 'nullable',
             'magnitude_id' => 'nullable'
         ];
     }
+
 }

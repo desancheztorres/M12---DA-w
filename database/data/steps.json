@@ -1,0 +1,332 @@
+[
+    {
+        "step": "En una cazuela con aceite caliente, añadimos el ajo picado y dejamos que se dore muy poco.",
+        "order": 1,
+        "recipe_id": 1
+    },
+    {
+        "step": "Seguidamente añadimos las setas troceadas (puede ser una mezcla de setas congeladas) y dejamos que se cocinen hasta que se evapore todo el agua.",
+        "order": 2,
+        "recipe_id": 1
+    },
+    {
+        "step": "Salpimentamos.",
+        "order": 3,
+        "recipe_id": 1
+    },
+    {
+        "step": "Una vez hechas, es el momento de añadir vino, si queremos. Con un chato es suficiente.",
+        "order": 4,
+        "recipe_id": 1
+    },
+    {
+        "step": "Echamos el arroz y removemos 1 minuto.",
+        "order": 5,
+        "recipe_id": 1
+    },
+    {
+        "step": "Añadimos el caldo de verduras, la bebida de soja, la levadura nutricional, más pimienta y corregimos de sal.",
+        "order": 6,
+        "recipe_id": 1
+    },
+    {
+        "step": "Removemos bien y dejamos que hierva hasta que el arroz esté cocido, unos 15-20 minutos. Si vemos que necesita más líquido siempre podemos añadir agua o leche de soja.",
+        "order": 7,
+        "recipe_id": 1
+    },
+    {
+        "step": "Una vez esté apagado el fuego, se puede añadir perejil picado y levadura nutricional por encima.",
+        "order": 8,
+        "recipe_id": 1
+    },
+    {
+        "step": "Ponemos a dorar la calabaza y la cebolla en una cazuela o en la olla exprés con aceite de oliva.",
+        "order": 1,
+        "recipe_id": 2
+    },
+    {
+        "step": "Cuando hayan cogido color, echamos el pimentón al gusto, la nuez moscada y la sal y removemos.",
+        "order": 2,
+        "recipe_id": 2
+    },
+    {
+        "step": "Añadimos las lentejas remojadas escurridas y el agua, suficiente para que lo cubra todo.",
+        "order": 3,
+        "recipe_id": 2
+    },
+    {
+        "step": "Dejamos que cocine 20-30 minutos o en la olla exprés 5 minutos desde que sube.",
+        "order": 4,
+        "recipe_id": 2
+    },
+    {
+        "step": "Podemos acompañar de pipas de calabaza tostadas en una sartén.",
+        "order": 5,
+        "recipe_id": 2
+    },
+    {
+        "step": "Se puede servir tanto en forma de guiso, como en forma de puré.",
+        "order": 6,
+        "recipe_id": 2
+    },
+    {
+        "step": "En una cazuela con aceite de oliva ponemos a dorar la cebolla picada y el ajo.",
+        "order": 1,
+        "recipe_id": 3
+    },
+    {
+        "step": "Salpimentamos y dejamos que se poche y se dore.",
+        "order": 2,
+        "recipe_id": 3
+    },
+    {
+        "step": "Entonces añadimos los guisantes y removemos para que se deshaga el hielo.",
+        "order": 3,
+        "recipe_id": 3
+    },
+    {
+        "step": "Echamos el caldo de verduras y removemos.",
+        "order": 4,
+        "recipe_id": 3
+    },
+    {
+        "step": "Dejamos que hierva unos 8-10 minutos.",
+        "order": 5,
+        "recipe_id": 3
+    },
+    {
+        "step": "Podemos hacer este plato más completo añadiendo un poco de arroz, noodles, pasta o acompañándolo con pan tostado con ajo.",
+        "order": 6,
+        "recipe_id": 3
+    },
+    {
+        "step": "Ponemos a dorar la cebolla y el ajo picados con sal y pimienta.",
+        "order": 1,
+        "recipe_id": 4
+    },
+    {
+        "step": "Añadimos el seitán cortado en trozos grandes, dejamos que se dore bien y lo retiramos.",
+        "order": 2,
+        "recipe_id": 4
+    },
+    {
+        "step": "Preparamos el zumo y, una vez esté la verdura bien cocinada, se añade al guiso.",
+        "order": 3,
+        "recipe_id": 4
+    },
+    {
+        "step": "Dejamos que hierva un poco y añadimos caldo de verduras.",
+        "order": 4,
+        "recipe_id": 4
+    },
+    {
+        "step": "Para ayudar a que espese la salsa podemos añadirle harina.",
+        "order": 5,
+        "recipe_id": 4
+    },
+    {
+        "step": "Apagamos el fuego.",
+        "order": 6,
+        "recipe_id": 4
+    },
+    {
+        "step": "Al gusto: podemos triturar o no triturar la salsa.",
+        "order": 7,
+        "recipe_id": 4
+    },
+    {
+        "step": "La ponemos a hervir y añadimos las patatas troceadas. Dejamos que cuezan 15 minutos.",
+        "order": 8,
+        "recipe_id": 4
+    },
+    {
+        "step": "Una vez listas, servimos con el seitán.",
+        "order": 9,
+        "recipe_id": 4
+    },
+    {
+        "step": "En una cazuela con aceite caliente se dora la cebolla picada.",
+        "order": 1,
+        "recipe_id": 5
+    },
+    {
+        "step": "Se echa la patata, la zanahoria y, por último, la calabaza.",
+        "order": 2,
+        "recipe_id": 5
+    },
+    {
+        "step": "Rehogamos todo bien para que coja color.",
+        "order": 3,
+        "recipe_id": 5
+    },
+    {
+        "step": "Se cubre de agua o caldo, dejando que cueza todo unos 25-30 minutos.",
+        "order": 4,
+        "recipe_id": 5
+    },
+    {
+        "step": "Una vez hecho, se pasa la batidora hasta que quede una textura fina y cremosa.",
+        "order": 5,
+        "recipe_id": 5
+    },
+    {
+        "step": "Decoramos con las pipas de girasol tostadas o al natural.",
+        "order": 6,
+        "recipe_id": 5
+    },
+    {
+        "step": "Ponemos a cocer el arroz y el brócoli en arbolitos.",
+        "order": 1,
+        "recipe_id": 6
+    },
+    {
+        "step": "Si tuvimos el arroz a remojo y el brócoli es congelado, tardarán lo mismo, unos 10 minutos. Si no lo tenemos a remojo y el brócoli es fresco, también tardan los mismo, unos 20 minutos.",
+        "order": 2,
+        "recipe_id": 6
+    },
+    {
+        "step": "Mientras se cuece, calentamos una sartén con aceite de oliva y el ajo picado.",
+        "order": 3,
+        "recipe_id": 6
+    },
+    {
+        "step": "Añadimos el tofu troceado en bastones de unos 5 centímetros de largo y dejamos que se dore por todos lados, removiendo de vez en cuando.",
+        "order": 4,
+        "recipe_id": 6
+    },
+    {
+        "step": "Cuando esté dorado, añadimos pimienta negra y salsa de soja.",
+        "order": 1,
+        "recipe_id": 7
+    },
+    {
+        "step": "Una vez tengamos el arroz y el brócoli cocidos y escurridos, los añadimos a la sartén.",
+        "order": 2,
+        "recipe_id": 7
+    },
+    {
+        "step": "Removemos bien, añadimos el jengibre y la salsa de soja y volvemos a remover.",
+        "order": 3,
+        "recipe_id": 7
+    },
+    {
+        "step": "Apagamos el fuego y listo.",
+        "order": 4,
+        "recipe_id": 6
+    },
+    {
+        "step": "Tan sencillo como ponerlo todo en la batidora y triturar hasta que quede una consistencia espesa, densa y cremosa.",
+        "order": 1,
+        "recipe_id": 7
+    },
+    {
+        "step": "Delicioso con cualquier verdura cruda para untar o con tostadas de centeno.",
+        "order": 2,
+        "recipe_id": 7
+    },
+    {
+        "step": "Dejamos los garbanzos en remojo durante 24 horas.",
+        "order": 1,
+        "recipe_id": 8
+    },
+    {
+        "step": "Transcurrido el tiempo, escurrimos bien y los colocamos en una procesadora de alimentos.",
+        "order": 2,
+        "recipe_id": 8
+    },
+    {
+        "step": "Añadimos el resto de ingredientes a excepción del pan rallado (ajo y cebolla picados y las especias).",
+        "order": 3,
+        "recipe_id": 8
+    },
+    {
+        "step": "Trituramos pero no del todo, de forma que aún queden trocitos de garbanzo.",
+        "order": 4,
+        "recipe_id": 8
+    },
+    {
+        "step": "Colocamos el pan rallado en un plato.",
+        "order": 5,
+        "recipe_id": 8
+    },
+    {
+        "step": "Hacemos bolas o mini hamburguesas con la masa y rebozamos en el pan.",
+        "order": 6,
+        "recipe_id": 8
+    },
+    {
+        "step": "Calentamos aceite abundante en una sartén o freidora y freímos toda la masa.",
+        "order": 7,
+        "recipe_id": 8
+    },
+    {
+        "step": "Opcionalmente puede hacerse en el horno.",
+        "order": 8,
+        "recipe_id": 8
+    },
+    {
+        "step": "Escurrimos el exceso de aceite en papel de cocina y servimos con hummus y ensalada.",
+        "order": 9,
+        "recipe_id": 8
+    },
+    {
+        "step": "En una cazuela con aceite de oliva sofreímos la cebolla y el calabacín troceado hasta que se doren un poco.",
+        "order": 1,
+        "recipe_id": 9
+    },
+    {
+        "step": "Añadimos posteriormente la patata en cubos y le damos unas vueltas.",
+        "order": 2,
+        "recipe_id": 9
+    },
+    {
+        "step": "Salpimentamos y echamos el caldo de verduras y bebida de soja. Debe ser suficiente para que lo cubra todo pero no en exceso (si queda muy espeso siempre se puede rectificar echando agua).",
+        "order": 3,
+        "recipe_id": 9
+    },
+    {
+        "step": "Echamos la levadura y dejamos que cueza por unos 20 minutos.",
+        "order": 4,
+        "recipe_id": 9
+    },
+    {
+        "step": "Una vez lo tengamos hecho solo queda triturar y corregir de sal y pimienta.",
+        "order": 5,
+        "recipe_id": 9
+    },
+    {
+        "step": "Opcionalmente podemos remojar el arroz de antemano durante 1 hora. Esto acelera el proceso de cocción y elimina contaminantes y antinutrientes.",
+        "order": 1,
+        "recipe_id": 10
+    },
+    {
+        "step": "En un cazo con agua hirviendo y sal, cocemos los guisantes con el arroz. Si hemos remojado el arroz, tardarán lo mismo, unos 10 minutos. Sino, habrá que añadir los guisantes a la mitad de la cocción del arroz.",
+        "order": 2,
+        "recipe_id": 10
+    },
+    {
+        "step": "Mientras, en una sartén con aceite caliente salteamos el tofu desmenuzado con las manos, añadimos las especias y la sal y removemos bien.",
+        "order": 3,
+        "recipe_id": 10
+    },
+    {
+        "step": "Rallamos la zanahoria y la echamos a la sartén.",
+        "order": 4,
+        "recipe_id": 10
+    },
+    {
+        "step": "Colamos y lavamos el arroz y los guisantes una vez estén cocidos, los echamos a la sartén también, dejamos que se fría un poco.",
+        "order": 5,
+        "recipe_id": 10
+    },
+    {
+        "step": "Añadirle un buen chorro de salsa de soja y remover.",
+        "order": 6,
+        "recipe_id": 10
+    },
+    {
+        "step": "Al servir ponemos semillas de sésamo por encima y listo.",
+        "order": 7,
+        "recipe_id": 10
+    }
+]

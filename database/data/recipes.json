@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Risotto básico",
+        "level": 2,
+        "time": 40
+    },
+    {
+        "name": "Lentejas con calabaza",
+        "level": 2,
+        "time": 20
+    },
+    {
+        "name": "Sopa de guisantes",
+        "level": 2,
+        "time": 20
+    },
+    {
+        "name": "Guiso de seitán a la naranja",
+        "level": 2,
+        "time": 30
+    },
+    {
+        "name": "Crema de zanahoria",
+        "level": 1,
+        "time": 30
+    },
+    {
+        "name": "Salteado de arroz, tofu, brócoli y salsa de soja",
+        "level": 2,
+        "time": 30
+    },
+    {
+        "name": "Hummus",
+        "level": 1,
+        "time": 10
+    },
+    {
+        "name": "Falafel",
+        "level": 2,
+        "time": 40
+    },
+    {
+        "name": "Crema de calabacín",
+        "level": 1,
+        "time": 30
+    },
+    {
+        "name": "Arroz tres delicias",
+        "level": 2,
+        "time": 25
+    }
+]
