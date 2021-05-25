@@ -25,6 +25,7 @@ class RecipeSeeder extends Seeder
                     'name'  => $recipe->name,
                     'level' => $recipe->level,
                     'time'  => $recipe->time,
+                    'description'  => $recipe->description,
                 ]
             );
         }
