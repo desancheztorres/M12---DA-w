@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Ingredient extends Model
 {
+
     use HasFactory;
 
     const IMAGE_PATH = '//www.dropbox.com/s/tvv8aqv3ks6djn8/';
@@ -18,7 +19,8 @@ class Ingredient extends Model
         return 'uuid';
     }
 
-    public function image_path() {
+    public function image_path()
+    {
         return self::IMAGE_PATH . $this->image;
     }
 
@@ -37,4 +39,10 @@ class Ingredient extends Model
     {
         return $this->belongsTo(Magnitude::class);
     }
+
+    public function recipes(): BelongsToMany
+    {
+        return $this->belongsToMany(Recipe::class)->withPivot('quantity');
+    }
+
 }

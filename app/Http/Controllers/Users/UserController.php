@@ -7,18 +7,21 @@ use App\Http\Requests\UpdateUserRequest;
 use App\Http\Resources\UserRes;
 use Illuminate\Support\Facades\Hash;
 
-class UserController extends Controller {
+class UserController extends Controller
+{
 
-    public function update(UpdateUserRequest $request)
+    public function update(UpdateUserRequest $request): UserRes
     {
         $user = $request->user();
 
-        $user->update([
-            'name' => $request->get('name', $user->name),
-            'lastname' => $request->get('lastname', $user->lastname),
-            'email' => $request->get('email', $user->email),
-            'password' => $request->password ? Hash::make($request->password) : $user->passord,
-        ]);
+        $user->update(
+            [
+                'name'     => $request->get('name', $user->name),
+                'lastname' => $request->get('lastname', $user->lastname),
+                'email'    => $request->get('email', $user->email),
+                'password' => $request->password ? Hash::make($request->password) : $user->passord,
+            ]
+        );
 
         return new UserRes($user);
     }

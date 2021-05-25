@@ -232,5 +232,119 @@
         "description": "description",
         "image": "5glkf5p2kjojwmy/alubias.png",
         "magnitude_id": "1"
+    },
+    {
+        "name": "Calabacin",
+        "description": "description",
+        "image": "g4sfq6iwrj2jset/calabacin.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Calabaza",
+        "description": "description",
+        "image": "5zjcztbvajenfog/calabaza.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Caldo de verduras",
+        "description": "description",
+        "image": "8kd5y7uty4j8kli/caldo-de-verduras.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Comino",
+        "description": "description",
+        "image": "v5tufah6l245wug/comino.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Curcuma",
+        "description": "description",
+        "image": "2mcuf4s5e7husra/curcuma.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Guisantes",
+        "description": "description",
+        "image": "6ltftavqbp5mbnl/guisantes.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Levadura nutricional",
+        "description": "description",
+        "image": "415pa9w9y65kvmh/levadura-nutricional.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Nueces",
+        "description": "description",
+        "image": "x5jngb8v3gmedtm/nueces.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Nuez moscada",
+        "description": "description",
+        "image": "chzzgxl8hy19aiy/nuez-moscada.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Pan rallado",
+        "description": "description",
+        "image": "10jcdmpc8lmf48i/pan-rallado.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Perejil",
+        "description": "description",
+        "image": "17kl7pzul71lntx/perejil.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Pimenton",
+        "description": "description",
+        "image": "vti206jk7aw4ks3/pimenton.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Pimenton negra",
+        "description": "description",
+        "image": "u5kqjrv1dfchkwl/pimienta-negra.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Pipas",
+        "description": "description",
+        "image": "cyyd8395v849lpg/pipas.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Salsa de soja",
+        "description": "description",
+        "image": "w8mep3k733ntywj/salsa-de-soja.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Seitan",
+        "description": "description",
+        "image": "dep73ue2hz8t6u2/seitan.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Setas",
+        "description": "description",
+        "image": "ffe0vwjqcr128oc/setas.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Tofu",
+        "description": "description",
+        "image": "vuuwu83zh9cl8t0/tofu.png",
+        "magnitude_id": "1"
+    },
+    {
+        "name": "Zanahoria",
+        "description": "description",
+        "image": "wgfmyw5678ttc0i/zanahoria.png",
+        "magnitude_id": "1"
     }
 ]

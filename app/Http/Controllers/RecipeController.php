@@ -7,16 +7,19 @@ use App\Http\Requests\Recipes\UpdateRecipeRequest;
 use App\Http\Resources\Recipe as RecipeResource;
 use App\Http\Resources\RecipeCollection;
 use App\Models\Recipe;
+use Illuminate\Http\Request;
 
 class RecipeController extends Controller
 {
 
     /**
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \App\Http\Resources\RecipeCollection
      */
-    public function index(): RecipeCollection
+    public function index(Request $request): RecipeCollection
     {
-        $recipes = Recipe::all();
+        $recipes = Recipe::filter($request, $this->getFilters())->get();
 
         return new RecipeCollection($recipes);
     }
@@ -65,5 +68,13 @@ class RecipeController extends Controller
 
         return response(null, 204);
     }
+
+    protected function getFilters(): array
+    {
+        return [
+            //
+        ];
+    }
+
 
 }

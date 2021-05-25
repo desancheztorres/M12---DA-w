@@ -17,7 +17,7 @@ class CreateIngredientsTable extends Migration
             $table->id();
             $table->uuid('uuid');
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->string('image');
             $table->foreignId('magnitude_id')->constrained()->onDelete('cascade');
             $table->timestamps();

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Users;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreUserRequest;
 use App\Http\Resources\User as UserResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -20,11 +21,11 @@ class CreateUserController extends Controller {
     }
 
     /**
-     * @param Request $request
+     * @param \App\Http\Requests\StoreUserRequest $request
      *
      * @return \App\Http\Resources\User
      */
-    public function __invoke(Request $request): UserResource
+    public function __invoke(StoreUserRequest $request): UserResource
     {
         $user = new UserResource($this->createUserController->__invoke($request));
 

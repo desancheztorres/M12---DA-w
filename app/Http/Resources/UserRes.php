@@ -21,7 +21,8 @@ class UserRes extends JsonResource
                 'name' => $this->name,
                 'lastname' => $this->lastname,
                 'email' => $this->email,
-                'ingredients' => $this->pantries
+                'ingredients' => $this->pantries,
+                'recipes' => $this->recipes
             ],
         ];
     }

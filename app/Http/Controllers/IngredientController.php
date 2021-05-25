@@ -7,6 +7,7 @@ use App\Http\Requests\Ingredients\UpdateIngredientRequest;
 use App\Http\Resources\Ingredient as IngredientResource;
 use App\Http\Resources\IngredientCollection;
 use App\Models\Ingredient;
+use Illuminate\Support\Str;
 
 class IngredientController extends Controller
 {
@@ -28,10 +29,11 @@ class IngredientController extends Controller
      */
     public function store(StoreIngredientRequest $request): IngredientResource
     {
-        $ingredient = new Ingredient;
-        $ingredient->name = $request->name;
+        $ingredient              = new Ingredient;
+        $ingredient->uuid        = Str::uuid();
+        $ingredient->name        = $request->name;
         $ingredient->description = $request->description;
-        $ingredient->image = $request->image;
+        $ingredient->image       = $request->image;
         $ingredient->magnitude()->associate($request->magnitude_id);
         $ingredient->save();
 
@@ -46,9 +48,9 @@ class IngredientController extends Controller
      */
     public function update(UpdateIngredientRequest $request, Ingredient $ingredient): IngredientResource
     {
-        $ingredient->name = $request->get('name', $ingredient->name);
+        $ingredient->name        = $request->get('name', $ingredient->name);
         $ingredient->description = $request->get('description', $ingredient->description);
-        $ingredient->image = $request->get('image', $ingredient->image);
+        $ingredient->image       = $request->get('image', $ingredient->image);
         $ingredient->magnitude()->associate($request->get('magnitude_id', $ingredient->magnitude_id));
         $ingredient->save();
 
@@ -61,7 +63,8 @@ class IngredientController extends Controller
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      * @throws \Exception
      */
-    public function destroy(Ingredient $ingredient) {
+    public function destroy(Ingredient $ingredient)
+    {
         $ingredient->delete();
 
         return response(null, 204);
