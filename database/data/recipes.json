@@ -2,51 +2,61 @@
     {
         "name": "Risotto clásico",
         "level": 2,
-        "time": 40
+        "time": 40,
+        "description":"Un risotto suave y cremoso con un toque de cúrcuma."
     },
     {
         "name": "Lentejas con calabaza",
         "level": 2,
-        "time": 20
+        "time": 20,
+        "description": "Todo lo nutritivo de las lentejas en forma de guiso o puré."
     },
     {
         "name": "Sopa de guisantes",
         "level": 2,
-        "time": 20
+        "time": 20,
+        "description": "Ideal para disfrutar de una sopa caliente en días de frío."
     },
     {
         "name": "Guiso de seitán a la naranja",
         "level": 2,
-        "time": 30
+        "time": 30,
+        "description": "Un plato cargado de proteínas de calidad con un añadido cítrico."
     },
     {
         "name": "Crema de zanahoria",
         "level": 1,
-        "time": 30
+        "time": 30,
+        "description": "Ligera, nutritiva y, sobre todo, muy fácil de preparar."
     },
     {
         "name": "Salteado de arroz y brócoli",
         "level": 2,
-        "time": 30
+        "time": 30,
+        "description": "Carbohidratos y fibra saludables en un plato sencillo pero sabroso."
     },
     {
         "name": "Hummus",
         "level": 1,
-        "time": 10
+        "time": 10,
+        "description": "Perfecto para picar y compartir, listo en solo 10 minutos."
     },
     {
         "name": "Falafel",
         "level": 2,
-        "time": 40
+        "time": 40,
+        "description": "Como plato principal o acompañante, rico en textura y sabor."
     },
     {
         "name": "Crema de calabacín",
         "level": 1,
-        "time": 30
+        "time": 30,
+        "description": "Una crema muy ligera para consumir fría o caliente."
     },
     {
         "name": "Arroz tres delicias",
         "level": 2,
-        "time": 25
+        "time": 25,
+        "description": "Todo el sabor tradicional con ingredientes 100% vegetales."
     }
 ]
