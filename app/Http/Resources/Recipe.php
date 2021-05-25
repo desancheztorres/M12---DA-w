@@ -24,7 +24,6 @@ class Recipe extends JsonResource
                 'steps' => $this->steps,
                 'images' => $this->images,
                 'ingredients' => $this->ingredients,
-                'images' => $this->images
             ]
         ];
     }
